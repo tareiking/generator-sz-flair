@@ -90,7 +90,7 @@ var WdSGenerator = yeoman.generators.Base.extend({
       }.bind( this ));
     } else {
       this.log( 'Cloning wd_s from GitHub...' );
-      clone = this.spawnCommand( 'git', ['clone', '--recursive', 'git@github.com:WebDevStudios/wd_s.git', '.', '-q'], { cwd: this.sourceRoot() } );
+      clone = this.spawnCommand( 'git', ['clone', '--recursive', 'git@github.com:sennza/Flair.git', '.', '-q'], { cwd: this.sourceRoot() } );
 
       clone.on( 'close', function() {
         done();
@@ -117,14 +117,14 @@ var WdSGenerator = yeoman.generators.Base.extend({
 
       if ( file.indexOf( '.php' ) > -1 || file.indexOf( '.css'  ) > -1 || file.indexOf( '.scss'  ) > -1 || file.indexOf( '.js'  ) > -1 ) {
         var result = self.read( file );
-        result = result.replace( /Text Domain: _s/g, 'Text Domain: ' + self.shortname);
-        result = result.replace( /'_s'/g, '\'' + self.shortname + '\'');
-        result = result.replace( /_s_/g, self._.underscored(self.shortname) + '_');
-        result = result.replace( / _s/g, ' ' + self.shortname);
-        result = result.replace( /_s /g, self.shortname + ' ');
-        result = result.replace( /\/_s/g, '/' + self.shortname );
-        result = result.replace( /_s-/g, self.shortname + '-');
-        result = result.replace( /_S_/g, self._.titleize( self.shortname ).replace( '-', '_' ) + '_' );
+        result = result.replace( /Text Domain: flair/g, 'Text Domain: ' + self.shortname);
+        result = result.replace( /'flair'/g, '\'' + self.shortname + '\'');
+        result = result.replace( /flair_/g, self._.underscored(self.shortname) + '_');
+        result = result.replace( / flair/g, ' ' + self.shortname);
+        result = result.replace( /flair /g, self.shortname + ' ');
+        result = result.replace( /\/flair/g, '/' + self.shortname );
+        result = result.replace( /flair-/g, self.shortname + '-');
+        result = result.replace( /Flair_/g, self._.titleize( self.shortname ).replace( '-', '_' ) + '_' );
         
         if ( file.indexOf( 'style.scss' ) > -1 ) {
           self.log.info( 'Updating theme information in ' + file );
