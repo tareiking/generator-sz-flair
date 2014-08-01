@@ -79,7 +79,7 @@ var WdSGenerator = yeoman.generators.Base.extend({
         update;
 
     if ( this.src.exists( 'package.json' ) ) {
-      this.log( 'Updating wd_s from GitHub...' );
+      this.log( 'Updating Flair Theme from GitHub...' );
       pull = this.spawnCommand( 'git', ['pull', '--recurse-submodules', '-q'], { cwd: this.sourceRoot() } );
       pull.on( 'close', function() {
         update = this.spawnCommand( 'git', ['submodule', 'update', '--recursive', '-q'], { cwd: this.sourceRoot() } );
@@ -117,7 +117,7 @@ var WdSGenerator = yeoman.generators.Base.extend({
 
       if ( file.indexOf( '.php' ) > -1 || file.indexOf( '.css'  ) > -1 || file.indexOf( '.scss'  ) > -1 || file.indexOf( '.js'  ) > -1 ) {
         var result = self.read( file );
-        result = result.replace( /Text Domain: flair/g, 'Text Domain: ' + self.shortname);
+        result = result.replace( /Text Domain: Flair/g, 'Text Domain: ' + self.shortname);
         result = result.replace( /'flair'/g, '\'' + self.shortname + '\'');
         result = result.replace( /flair_/g, self._.underscored(self.shortname) + '_');
         result = result.replace( / flair/g, ' ' + self.shortname);
@@ -125,7 +125,7 @@ var WdSGenerator = yeoman.generators.Base.extend({
         result = result.replace( /\/flair/g, '/' + self.shortname );
         result = result.replace( /flair-/g, self.shortname + '-');
         result = result.replace( /Flair_/g, self._.titleize( self.shortname ).replace( '-', '_' ) + '_' );
-        
+
         if ( file.indexOf( 'style.scss' ) > -1 ) {
           self.log.info( 'Updating theme information in ' + file );
           result = result.replace( /(Theme Name: )(.+)/g, '$1' + self.themename );
