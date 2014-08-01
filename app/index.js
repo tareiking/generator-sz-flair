@@ -89,7 +89,7 @@ var WdSGenerator = yeoman.generators.Base.extend({
         });
       }.bind( this ));
     } else {
-      this.log( 'Cloning wd_s from GitHub...' );
+      this.log( 'Cloning Flair from GitHub...' );
       clone = this.spawnCommand( 'git', ['clone', '--recursive', 'git@github.com:sennza/Flair.git', '.', '-q'], { cwd: this.sourceRoot() } );
 
       clone.on( 'close', function() {
@@ -148,10 +148,10 @@ var WdSGenerator = yeoman.generators.Base.extend({
           result = result.replace( /("url": )(.+)/g, '$1""' );
         }
 
-        self.write( file.replace( '/_s', '/' + this.shortname ), result );
+        self.write( file.replace( '/flair', '/' + this.shortname ), result );
       } else {
         // Copy over files substituting the theme name.
-        this.copy( file, file.replace( '/_s', '/' + this.shortname ) );
+        this.copy( file, file.replace( '/flair', '/' + this.shortname ) );
       }
     }, this);
   },
