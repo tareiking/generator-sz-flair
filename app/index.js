@@ -12,8 +12,17 @@ var WdSGenerator = yeoman.generators.Base.extend({
 
     this.on('end', function () {
       if (!this.options['skip-install']) {
-        this.installDependencies();
+        this.installDependencies({
+          callback: function() {
+                this.emit('dependenciesInstalled');
+          }.bind(this)
+        });
       }
+    });
+
+        // Now you can bind to the dependencies installed event
+    this.on('dependenciesInstalled', function() {
+        this.spawnCommand('grunt', ['setup']);
     });
   },
 
