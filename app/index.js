@@ -21,7 +21,7 @@ var WdSGenerator = yeoman.generators.Base.extend({
     var done = this.async();
 
     // Have Yeoman greet the user.
-    this.log(yosay('Welcome to the marvelous wd_s generator!'));
+    this.log(yosay('Welcome to the marvelous Flair V0.6 Theme generator! Based on WD-S generator by @webdevstudios.'));
 
     var prompts = [
       {
@@ -41,22 +41,22 @@ var WdSGenerator = yeoman.generators.Base.extend({
       {
         name: 'themeuri',
         message: 'Enter the URI of your theme?',
-        default: 'http://webdevstudios.com'
+        default: 'http://sennza.com.au/Flair'
       },
       {
         name: 'author',
         message: 'Enter the  Author name?',
-        default: 'WebDevStudios'
+        default: 'Sennza'
       },
       {
         name: 'authoruri',
         message: 'Enter the Author URI?',
-        default: 'http://webdevstudios.com/'
+        default: 'http://sennza.com.au/'
       },
       {
         name: 'themedescription',
         message: 'Enter the theme description:',
-        default: 'A starter theme based on wd_s'
+        default: 'A starter theme based on Flair (http://github.com/sennza/Flair)'
       },
     ];
 
