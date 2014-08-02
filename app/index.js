@@ -30,7 +30,7 @@ var WdSGenerator = yeoman.generators.Base.extend({
     var done = this.async();
 
     // Have Yeoman greet the user.
-    this.log(yosay('Welcome to the marvelous Flair V0.6 Theme generator! Based on WD-S generator by @webdevstudios.'));
+    this.log(yosay('Welcome to the marvelous Flair V1.0 Theme generator! Based on WD-S generator by @webdevstudios.'));
 
     var prompts = [
       {
