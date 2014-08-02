@@ -1,6 +1,6 @@
 {
   "name": "generator-sz-flair",
-  "version": "1.0",
+  "version": "0.9.1",
   "description": "Flair Theme generator",
   "license": "MIT",
   "main": "app/index.js",
