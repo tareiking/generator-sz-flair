@@ -1,7 +1,7 @@
 {
   "name": "generator-sz-flair",
-  "version": "0.9.1",
-  "description": "Flair Theme generator",
+  "version": "0.9.2",
+  "description": "Flair Theme generator. Generate a WordPress Theme based on the Sennza Flair Theme",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "TareiKing/generator-sz-flair",
