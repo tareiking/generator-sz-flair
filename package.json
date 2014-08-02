@@ -1,14 +1,14 @@
 {
-  "name": "generator-wd-s",
-  "version": "0.2.2",
-  "description": "wd_s generator",
+  "name": "generator-sz-flair",
+  "version": "1.0",
+  "description": "Flair Theme generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "CamdenSegal/generator-wd-s",
+  "repository": "TareiKing/generator-sz-flair",
   "author": {
-    "name": "Camden Segal",
-    "email": "camden.segal@gmail.com",
-    "url": "https://github.com/CamdenSegal"
+    "name": "Tarei King",
+    "email": "tareiking@gmail.com",
+    "url": "https://github.com/TareiKing"
   },
   "engines": {
     "node": ">=0.10.0"
