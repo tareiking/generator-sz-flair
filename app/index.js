@@ -122,7 +122,7 @@ var WdSGenerator = yeoman.generators.Base.extend({
         result = result.replace( /flair_/g, self._.underscored(self.shortname) + '_');
         result = result.replace( / flair/g, ' ' + self.shortname);
         result = result.replace( /flair /g, self.shortname + ' ');
-        result = result.replace( /\/flair/g, '/' + self.shortname );
+        result = result.replace( / Flair /g, ' ' + self.themename + ' ' );
         result = result.replace( /flair-/g, self.shortname + '-');
         result = result.replace( /Flair_/g, self._.titleize( self.shortname ).replace( '-', '_' ) + '_' );
 
