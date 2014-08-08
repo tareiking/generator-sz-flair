@@ -50,22 +50,22 @@ var WdSGenerator = yeoman.generators.Base.extend({
       {
         name: 'themeuri',
         message: 'Enter the URI of your theme?',
-        default: 'http://sennza.com.au/Flair'
+        default: 'http://www.sennza.com.au/'
       },
       {
         name: 'author',
         message: 'Enter the  Author name?',
-        default: 'Sennza'
+        default: 'Sennza Pty Ltd, Bronson Quick, Tarei King, Lachlan MacPherson'
       },
       {
         name: 'authoruri',
         message: 'Enter the Author URI?',
-        default: 'http://sennza.com.au/'
+        default: 'http://www.sennza.com.au/'
       },
       {
         name: 'themedescription',
         message: 'Enter the theme description:',
-        default: 'A starter theme based on Flair (http://github.com/sennza/Flair)'
+        default: 'A starter theme based on Flair'
       },
     ];
 
@@ -117,7 +117,7 @@ var WdSGenerator = yeoman.generators.Base.extend({
 
     this.package = JSON.parse(this.src.read( 'package.json' ));
 
-    this.log.writeln('Generating from ' + 'WD_S' + ' v' + this.package.version + '...');
+    this.log.writeln('Generating from ' + 'Flair' + ' v' + this.package.version + '...');
 
     files.forEach(function(file) {
       if (ignores.indexOf(file) !== -1 || file.indexOf( '.git/' ) !== -1 ) {
@@ -166,4 +166,4 @@ var WdSGenerator = yeoman.generators.Base.extend({
   },
 });
 
-module.exports = WdSGenerator;
+module.exports = FlairGenerator;
