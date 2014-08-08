@@ -37,7 +37,7 @@ var WdSGenerator = yeoman.generators.Base.extend({
         type: 'input',
         name: 'themename',
         message: 'Enter the project name?',
-        default: this.appname
+        default: 'Flair'
       },
        {
         type: 'input',
