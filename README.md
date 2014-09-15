@@ -5,10 +5,10 @@
 
 ## Getting Started
 
-To install generator-wd_s from npm, run:
+To install generator-sz-flair from npm, run:
 
 ```bash
-$ npm install -g generator-flair-theme
+$ npm install -g generator-sz-flair
 ```
 
 Create a Theme Folder:
@@ -21,7 +21,7 @@ $ cd theme-folder-name
 Finally, initiate the generator:
 
 ```bash
-$ yo flair-theme
+$ yo sz-flair
 ```
 
 ## Credits
