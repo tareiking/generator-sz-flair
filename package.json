@@ -5,35 +5,35 @@
   "license": "MIT",
   "main": "app/index.js",
   "repository": {
-    "type": "git",
-    "url": "https://github.com/tareiking/generator-sz-flair.git"
-  }
+      "type": "git",
+      "url": "https://github.com/tareiking/generator-sz-flair.git"
+  },
   "author": {
-    "name": "Tarei King",
-    "email": "tareiking@gmail.com",
-    "url": "https://github.com/TareiKing"
+      "name": "Tarei King",
+      "email": "tareiking@gmail.com",
+      "url": "https://github.com/TareiKing"
   },
   "engines": {
-    "node": ">=0.10.0"
+      "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+      "test": "mocha"
   },
   "files": [
-    "app"
+      "app"
   ],
   "keywords": [
-    "yeoman-generator"
+      "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "~0.17.0",
-    "chalk": "~0.4.0",
-    "yosay": "^0.1.0"
+      "yeoman-generator": "~0.17.0",
+      "chalk": "~0.4.0",
+      "yosay": "^0.1.0"
   },
   "devDependencies": {
-    "mocha": "*"
+      "mocha": "*"
   },
   "peerDependencies": {
-    "yo": ">=1.0.0"
+      "yo": ">=1.0.0"
   }
 }
