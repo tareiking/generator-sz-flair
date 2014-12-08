@@ -3,6 +3,10 @@
 > [Yeoman](http://yeoman.io) generator for [flair](https://github.com/sennza/Flair)
 
 
+## Pre-requisites
+
+Definitely need `bower` and `grunt` already installed.
+
 ## Getting Started
 
 To install generator-sz-flair from npm, run:
