@@ -135,7 +135,7 @@ var FlairGenerator = yeoman.generators.Base.extend({
         result = result.replace( /flair-/g, self.shortname + '-');
         result = result.replace( /Flair_/g, self._.titleize( self.shortname ).replace( '-', '_' ) + '_' );
 
-        if ( file.indexOf( 'style.scss' ) > -1 ) {
+        if ( file.indexOf( 'style.css' ) > -1 ) {
           self.log.info( 'Updating theme information in ' + file );
           result = result.replace( /(Theme Name: )(.+)/g, '$1' + self.themename );
           result = result.replace( /(Theme URI: )(.+)/g, '$1' + self.themeuri );
